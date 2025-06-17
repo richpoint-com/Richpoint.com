@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+<script defer data-domain="richpoint.tiiny.site" src="https://analytics.tiiny.site/js/plausible.js"></script><script type="text/javascript" src="https://tiiny.host/ad-script.js"></script></head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rich Point</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- LOGIN PAGE -->
+<div id="login-page" class="card">
+  <h1>Welcome to Rich Point</h1>
+  <input type="tel" id="mobile" placeholder="Enter Mobile Number" required />
+  <input type="password" id="login-password" placeholder="Enter Password" required />
+  <button onclick="goToQR()">Login</button>
+</div>
+
+<!-- QR CODE PAGE -->
+<div id="qr-page" class="card hidden">
+  <h2>Pay Entry Fee</h2>
+  <img src="https://i.ibb.co/Css84bj2/IMG-20250617-WA0000.jpg" alt="QR Code" />
+  <p>Please pay ₹100 using the above QR code.</p>
+  <p>We will send your access password on your mobile after payment.</p>
+  <button onclick="goToConfirmation()">I Did Payment</button>
+</div>
+
+<!-- CONFIRMATION PAGE -->
+<div id="confirm-page" class="card hidden">
+  <h2>Confirm Payment</h2>
+  <p>If you've done the payment, a password has been sent to your mobile number.</p>
+  <input type="password" id="final-password" placeholder="Enter Received Password" />
+  <button onclick="verifyPassword()">Continue</button>
+  <p id="error" class="error"></p>
+</div>
+
+<!-- FINAL PAGE -->
+<div id="final-page" class="card hidden">
+  <h2>Buy Rich Coins</h2>
+  <p><strong>1 Rich Coin = ₹1</strong></p>
+  <select id="coin-count">
+    <option value="10">Buy 10 Coins</option>
+    <option value="50">Buy 50 Coins</option>
+    <option value="100">Buy 100 Coins</option>
+     <option value="500">Buy 500 Coins</option>
+  </select>
+  <button onclick="buyCoins()">Buy Rich Coin</button>
+  <p id="purchase-confirmation"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
